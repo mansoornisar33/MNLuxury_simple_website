@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MNLuxury</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: black;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .logo img:hover {
+      transform: scale(1.05);
+    }
+
+
+    .nav-links a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      color: #d4af37;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .hero img {
+      width: 45%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* SUGGESTION CARDS */
+    .cards {
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      width: 260px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    /* BRAND ICONS */
+    .brands {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .brand-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .brand-icons img {
+      width: 80px;
+      opacity: 0.8;
+    }
+
+    /* FOOTER */
+    footer {
+      background: black;
+      color: white;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .footer-links a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .subscribe-box input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .subscribe-box button {
+      width: 100%;
+      padding: 10px;
+      background: #d4af37;
+      border: none;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .subscribe-box button:hover {
+      background: white;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      width: 100%;
+      margin-top: 20px;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="MNLuxury Logo" style="height:50px; width:auto;">
+      LuXury
+    </div>
+    <div class="nav-links">
+      <a href="#">Women</a>
+      <a href="#">Men</a>
+      <a href="about.html">About Us</a>
+      <a href="contact_us.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- HERO IMAGES -->
+  <div class="hero">
+    <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" alt="Men Fashion" />
+    <img src="https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg" alt="Women Fashion" />
+  </div>
+
+  <!-- SUGGESTION CARDS -->
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" />
+      <h3>Casual Styles</h3>
+      <p>Explore everyday comfort with premium fabrics.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" />
+      <h3>Luxury Wear</h3>
+      <p>Exclusive designs for special occasions.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg" />
+      <h3>Trending Now</h3>
+      <p>Stay ahead with the latest fashion trends.</p>
+    </div>
+  </div>
+
+  <!-- BRAND ICONS -->
+  <div class="brands">
+    <h2>Our Brand Partners</h2>
+    <div class="brand-icons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Puma-logo.png" alt="Puma" />
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- Menu Section -->
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <div class="footer-links">
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="about.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Subscription Section -->
+    <div class="footer-section">
+      <h3>Subscribe</h3>
+      <div class="subscribe-box">
+        <input type="text" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+    <!-- Policies Section -->
+    <div class="footer-section">
+      <h3>Policies</h3>
+      <div class="footer-links">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Return Policy</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 MNLuxury — All Rights Reserved
+    </div>
+  </footer>
+
+</body>
+
+</html>
